@@ -124,6 +124,8 @@ omarchy-nes-vscode-theme/
   "description": "A retro NES-inspired theme with red, black, and grey aesthetics",
   "version": "1.0.0",
   "publisher": "your-name",
+  "icon": "images/icon.png",
+  "license": "MIT",
   "engines": {
     "vscode": "^1.80.0"
   },
@@ -154,6 +156,11 @@ omarchy-nes-vscode-theme/
 }
 ```
 
+**Optional Fields Explained:**
+- `icon`: Path to a 128x128px PNG icon for the extension marketplace
+- `license`: License identifier (e.g., "MIT", "Apache-2.0")
+- `$schema`: Added to theme JSON for IntelliSense support when editing
+
 ### Step 3: Create the Theme File
 
 See the [Complete Theme Example](#complete-theme-example) section below for the full theme JSON.
@@ -166,6 +173,7 @@ Create `themes/omarchy-nes-color-theme.json`:
 
 ```json
 {
+  "$schema": "vscode://schemas/color-theme",
   "name": "Omarchy NES",
   "type": "dark",
   "colors": {
